@@ -1,0 +1,421 @@
+:root {
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --main-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-text-color: #2196f3;
+}
+.list {
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+/*
+body {
+  background-color: #fff;
+}*/
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* ======== HEADER========*/
+
+.site-nav {
+  display: flex;
+}
+.adress-header {
+  display: flex;
+}
+.adress {
+  margin-left: auto;
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+.adress-header .item + .item {
+  margin-left: 50px;
+}
+.site-nav .item {
+  margin-right: 50px;
+}
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+.site-nav .nav-link {
+  color: var(--secondary-text-color);
+}
+.site-nav .nav-link.current {
+  color: var(--accent-text-color);
+}
+
+.logo {
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-right: 90px;
+
+  color: #000000;
+
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.accent {
+  color: var(--accent-text-color);
+}
+
+.nav-link {
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.adress-mail:hover,
+.adress-mail:focus,
+.adress-location:hover,
+.adress-location:focus,
+.adress-mail-footer:hover,
+.adress-mail-footer:focus {
+  color: var(--accent-text-color);
+}
+.adress-list,
+.contact-info {
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14x;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.adress-mail,
+.adress-tel {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  margin-bottom: auto;
+  color: #757575;
+  font-style: normal;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+/* ======== END HEADER========*/
+
+/* ======= HERO =========*/
+/*
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+*/
+
+.hero-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  color: #ffffff;
+  background-color: #2f303a;
+  font-family: var(--main-font);
+  text-align: center;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  margin-left: 280px;
+  margin-right: 236px;
+  font-weight: 900;
+  font-size: 44px;
+}
+.hero-button {
+  min-width: 136px;
+  padding: 10px 27px;
+  margin-top: 40px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.36;
+  background-color: var(--accent-text-color);
+}
+
+/* ======= END HERO =========*/
+
+/* ====== Advantages =======*/
+.advantages-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantages {
+  display: flex;
+}
+.advantages .item {
+  margin-right: 30px;
+}
+.advantages .item:last-child {
+  margin-right: 0;
+}
+.advantages-title {
+  margin-bottom: 10px;
+
+  color: var(--secondary-text-color);
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  color: var(--main-text-color);
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* ====== END Advantages =======*/
+
+/* ======= Examples ========*/
+.examples-section {
+  padding-bottom: 86px;
+}
+.examples {
+  display: flex;
+}
+
+.examples .item {
+  margin-right: 30px;
+}
+.examples .item:last-child {
+  margin-right: 0;
+}
+.examples-title,
+.team-title {
+  margin-bottom: 50px;
+  color: var(--secondary-text-color);
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* ======= END Examples ========*/
+
+/* ======== Team ========*/
+
+.team {
+  display: flex;
+}
+.team-section {
+  padding-bottom: 86px;
+  background-color: #f5f4fa;
+}
+.item-card {
+  width: 270px;
+  height: 368px;
+}
+.team .item-card {
+  margin-right: 30px;
+}
+
+.team .item-card:last-child {
+  margin-right: 0;
+}
+.team-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: var(--secondary-text-color);
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-position {
+  margin-bottom: 30px;
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* ======== END Team ========*/
+
+/* ======== Footer ========*/
+
+footer {
+  display: flex;
+  background-color: #2f303a;
+}
+
+.logo-footer {
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+
+  color: #ffffff;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.adress-location {
+  display: block;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.adress-mail-footer,
+.adress-tel-footer {
+  display: block;
+  margin-top: 9px;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* ======== END Footer ========*/
+
+/* ========= Portfolio =======*/
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.button .portfolio:focus,
+.button .portfolio:hover {
+  background: var(--accent-text-color);
+  color: #ffffff;
+}
+.button .item {
+  margin-right: 8px;
+  margin-bottom: 34px;
+  height: 38px;
+}
+.button .item:last-child {
+  margin-right: 0;
+}
+.button .portfolio {
+  color: var(--secondary-font);
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.work {
+  display: flex;
+  flex-wrap: wrap;
+}
+.work .item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 370px;
+}
+.work .item:nth-child(3n) {
+  margin-right: 0;
+}
+.work .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.work-title {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+
+.work-project {
+  margin-bottom: 20px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+/* ========= END Portfolio =======*/
