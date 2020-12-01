@@ -265,12 +265,17 @@ body {
   display: flex;
 }
 .team-section {
+  padding-top: 94px;
   padding-bottom: 86px;
   background-color: #f5f4fa;
 }
 .item-card {
   width: 270px;
   height: 368px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team .item-card {
   margin-right: 30px;
@@ -309,6 +314,7 @@ body {
 footer {
   display: flex;
   background-color: #2f303a;
+  padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -367,14 +373,18 @@ footer {
 }
 .button .item {
   margin-right: 8px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   height: 38px;
 }
 .button .item:last-child {
   margin-right: 0;
 }
 .button .portfolio {
+  padding: 6px 22px;
   color: var(--secondary-font);
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: transparent;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
@@ -390,6 +400,9 @@ footer {
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 .work .item:nth-child(3n) {
   margin-right: 0;
@@ -400,6 +413,7 @@ footer {
 .work-title {
   margin-top: 20px;
   margin-bottom: 8px;
+  margin-left: 24px;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 18px;
@@ -410,6 +424,7 @@ footer {
 
 .work-project {
   margin-bottom: 20px;
+  margin-left: 24px;
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
