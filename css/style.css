@@ -373,7 +373,6 @@ footer {
 }
 .button .item {
   margin-right: 8px;
-  margin-bottom: 50px;
   height: 38px;
 }
 .button .item:last-child {
@@ -395,6 +394,7 @@ footer {
 .work {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 .work .item {
   margin-right: 30px;
@@ -403,6 +403,7 @@ footer {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .work .item:nth-child(3n) {
   margin-right: 0;
